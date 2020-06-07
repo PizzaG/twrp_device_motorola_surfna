@@ -16,17 +16,14 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/motorola/Motorola Surfna
-
-# For building with minimal manifest
-ALLOW_MISSING_DEPENDENCIES := true
+DEVICE_PATH := device/motorola/MotorolaSurfna
 
 # Architecture
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
-TARGET_CPU_VARIANT := generic
+TARGET_CPU_VARIANT := cortex-a9
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 androidboot.hardware=qcom user_debug=30 msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlycon=msm_serial_dm,0x78B0000 vmalloc=300M firmware_class.path=/vendor/firmware_mnt/image androidboot.usbconfigfs=true loop.max_part=7 printk.devkmsg=on buildvariant=user veritykeyid=id:7e4333f9bba00adfe0ede979e28ed1920492b40f
@@ -56,7 +53,7 @@ TARGET_KERNEL_CONFIG := Motorola Surfna_defconfig
 #TARGET_BOARD_PLATFORM_GPU := 
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := Motorola Surfna
+TARGET_OTA_ASSERT_DEVICE := MotorolaSurfna
 
 # Partitions
 #BOARD_RECOVERYIMAGE_PARTITION_SIZE := 50331648 # This is the maximum known partition size, but it can be higher, so we just omit it

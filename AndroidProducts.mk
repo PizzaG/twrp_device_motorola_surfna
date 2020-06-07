@@ -17,4 +17,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/omni_Motorola Surfna.mk
+	$(LOCAL_DIR)/omni_MotorolaSurfna.mk
